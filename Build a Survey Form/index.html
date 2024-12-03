@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Customer Feedback Survey</h1>
+        <p id="description">Help us improve our services by sharing your thoughts!</p>
+        
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    placeholder="Enter your full name" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Enter your email address" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">Age (optional)</label>
+                <input 
+                    type="number" 
+                    id="number" 
+                    name="age" 
+                    min="13" 
+                    max="120" 
+                    placeholder="Enter your age"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown">How did you hear about us?</label>
+                <select id="dropdown" name="referral" required>
+                    <option value="">Select an option</option>
+                    <option value="social-media">Social Media</option>
+                    <option value="friend">Friend Recommendation</option>
+                    <option value="advertisement">Online Advertisement</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Which of our services have you used? (Check all that apply)</p>
+                <label>
+                    <input 
+                        type="checkbox" 
+                        name="services" 
+                        value="web-design"
+                    > Web Design
+                </label>
+                <label>
+                    <input 
+                        type="checkbox" 
+                        name="services" 
+                        value="marketing"
+                    > Marketing
+                </label>
+                <label>
+                    <input 
+                        type="checkbox" 
+                        name="services" 
+                        value="consulting"
+                    > Consulting
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Would you recommend us to others?</p>
+                <label>
+                    <input 
+                        type="radio" 
+                        name="recommendation" 
+                        value="definitely"
+                    > Definitely
+                </label>
+                <label>
+                    <input 
+                        type="radio" 
+                        name="recommendation" 
+                        value="maybe"
+                    > Maybe
+                </label>
+                <label>
+                    <input 
+                        type="radio" 
+                        name="recommendation" 
+                        value="no"
+                    > No
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments</label>
+                <textarea 
+                    id="comments" 
+                    name="comments" 
+                    placeholder="Share your thoughts..."
+                    rows="4"
+                ></textarea>
+            </div>
+
+            <button type="submit" id="submit">Submit Survey</button>
+        </form>
+    </div>
+</body>
+</html>

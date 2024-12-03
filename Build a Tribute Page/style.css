@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-color: #ecf0f1;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#title {
+    text-align: center;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+#img-div {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#img-caption {
+    margin-top: 15px;
+    font-style: italic;
+    color: var(--primary-color);
+}
+
+#tribute-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+#tribute-info h2, #tribute-info h3 {
+    color: var(--secondary-color);
+}
+
+#tribute-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#tribute-info ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#tribute-info ul li::before {
+    content: '▸';
+    color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 15px;
+    color: #666;
+}
+
+.external-link {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#tribute-link {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#tribute-link:hover {
+    background-color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    #main {
+        padding: 10px;
+        width: 95%;
+    }
+
+    #title {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Programming Guide</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Python Programming</header>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#Basic_Syntax" class="nav-link">Basic Syntax</a>
+        <a href="#Data_Types" class="nav-link">Data Types</a>
+        <a href="#Functions" class="nav-link">Functions</a>
+        <a href="#Modules" class="nav-link">Modules</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Python is a high-level, interpreted programming language known for its simplicity and readability.</p>
+            <p>Created by Guido van Rossum and first released in 1991, Python has become one of the most popular programming languages worldwide.</p>
+            <p>It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.</p>
+            <code>print("Hello, Python!")</code>
+            <code>import this  # The Zen of Python</code>
+        </section>
+
+        <section class="main-section" id="Basic_Syntax">
+            <header>Basic Syntax</header>
+            <p>Python uses indentation to define code blocks, which is different from many other programming languages.</p>
+            <p>Statements are typically written on a single line, and the colon (:) is used to start code blocks.</p>
+            <ul>
+                <li>Indentation is crucial in Python</li>
+                <li>Use 4 spaces for each indentation level</li>
+                <li>Consistent indentation prevents syntax errors</li>
+            </ul>
+            <code>
+if True:
+    print("This is an indented block")
+            </code>
+        </section>
+
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <p>Python has several built-in data types to store different kinds of information.</p>
+            <p>The most common data types include integers, floating-point numbers, strings, lists, and dictionaries.</p>
+            <ul>
+                <li>Integers: Whole numbers like 42</li>
+                <li>Floats: Decimal numbers like 3.14</li>
+                <li>Strings: Text enclosed in quotes</li>
+                <li>Lists: Ordered, mutable collections</li>
+                <li>Dictionaries: Key-value pair collections</li>
+            </ul>
+            <code>age = 30  # Integer</code>
+            <code>name = "Python Learner"  # String</code>
+        </section>
+
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>Functions in Python are defined using the 'def' keyword and can take parameters and return values.</p>
+            <p>They help in organizing code and promoting reusability.</p>
+            <code>
+def greet(name):
+    return f"Hello, {name}!"
+            </code>
+            <ul>
+                <li>Use 'def' to define functions</li>
+                <li>Function names should be lowercase</li>
+                <li>Use descriptive function names</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Modules">
+            <header>Modules</header>
+            <p>Modules are Python files containing functions, classes, and variables that can be imported and used in other scripts.</p>
+            <p>Python comes with a rich standard library of modules for various tasks.</p>
+            <code>import math  # Importing a standard library module</code>
+            <code>from datetime import datetime  # Importing specific items</code>
+            <ul>
+                <li>Use 'import' to include modules</li>
+                <li>Standard library offers many useful modules</li>
+                <li>You can also create your own modules</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
