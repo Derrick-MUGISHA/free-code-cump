@@ -1,0 +1,72 @@
+<!-- // index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Enter Pokémon name or ID">
+            <button id="search-button">Search</button>
+        </div>
+        
+        <div class="pokemon-card">
+            <div class="pokemon-header">
+                <h2 id="pokemon-name"></h2>
+                <span id="pokemon-id"></span>
+            </div>
+            
+            <div class="sprite-container">
+                <!-- Sprite will be inserted here -->
+            </div>
+            
+            <div class="types-container">
+                <div id="types"></div>
+            </div>
+            
+            <div class="info-grid">
+                <div class="info-item">
+                    <span>Weight: </span>
+                    <span id="weight"></span>
+                </div>
+                <div class="info-item">
+                    <span>Height: </span>
+                    <span id="height"></span>
+                </div>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span>HP:</span>
+                    <span id="hp"></span>
+                </div>
+                <div class="stat-item">
+                    <span>Attack:</span>
+                    <span id="attack"></span>
+                </div>
+                <div class="stat-item">
+                    <span>Defense:</span>
+                    <span id="defense"></span>
+                </div>
+                <div class="stat-item">
+                    <span>Special Attack:</span>
+                    <span id="special-attack"></span>
+                </div>
+                <div class="stat-item">
+                    <span>Special Defense:</span>
+                    <span id="special-defense"></span>
+                </div>
+                <div class="stat-item">
+                    <span>Speed:</span>
+                    <span id="speed"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
