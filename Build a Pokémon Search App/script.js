@@ -27,10 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
     async function fetchPokemon(query) {
         try {
             const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${query.toLowerCase()}`);
-            if (!response.ok) throw new Error('Pokemon not found');
+            if (!response.ok) {
+                alert("Pokémon not found");
+                return null;
+            }
             return await response.json();
         } catch (error) {
-            alert('Pokémon not found');
+            alert("Pokémon not found");
             return null;
         }
     }
