@@ -64,3 +64,34 @@ string2 = "Texas",
 letter = "s"
 
 console.log( mostRepetitions(string1, string2, letter));
+
+
+function getMillisecondsBetween(date1, date2) {
+    // Convert both dates to milliseconds
+    const time1 = date1.getTime();
+    const time2 = date2.getTime();
+    
+    // Subtract one time from the other to get the difference
+    const difference = Math.abs(time1 - time2);
+    
+    // Return the difference
+    return difference;
+}
+
+// Correctly initializing the dates
+const date1 = new Date("Wed Mar 02 2005 12:01:15 GMT+0200");
+const date2 = new Date("Wed Mar 02 2005 12:00:05 GMT+0200");
+
+// Calling the function to get the difference
+const difference = getMillisecondsBetween(date1, date2);
+
+console.log(difference); // Output: 70000
+
+
+
+
+function sumMath(a, b) {
+  return Math.abs(a - b);
+}
+
+console.log(sumMath(1, 2));
