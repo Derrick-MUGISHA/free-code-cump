@@ -156,3 +156,21 @@ console.log(isSorted(numbers1));
 
 const numbers2 = [91, 31, -5];
 console.log(isSorted(numbers2)); 
+
+
+function halfAndHalf(text) {
+    const middle = Math.floor(text.length / 2);
+
+    const firstHalf = text.slice(0, middle).toLowerCase();
+    const secondHalf = text.slice(middle).toUpperCase();
+
+    return firstHalf + secondHalf;
+}
+
+// Example 1
+const text1 = "Hello World";
+console.log(halfAndHalf(text1)); 
+
+// Example 2    
+const text2 = "Programming";
+console.log(halfAndHalf(text2));
