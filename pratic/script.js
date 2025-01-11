@@ -95,3 +95,41 @@ function sumMath(a, b) {
 }
 
 console.log(sumMath(1, 2));
+
+
+function getMonthOfTheYear(date) {
+    const months = [
+       "January", "February", "March", "April", "May", "June",
+       "July", "August", "September", "October", "November", "December"
+   ];
+
+   const monthNumber = date.getMonth();
+
+   const monthName = months[monthNumber];
+
+return monthName;
+   
+}
+
+const myDate = new Date("Wed Dec 25 2024 18:15:00 GMT+0200");
+
+console.log(getMonthOfTheYear(myDate));
+
+
+function getDevelopers(employees) {
+
+    const developers = employees.filter(employee => employee.job === "developer");
+    
+    return developers;
+    
+}
+
+const employees = [
+    { age: 28, job: "developer", name: "Alice" },
+    { age: 35, job: "designer", name: "Bob" },
+    { age: 42, job: "manager", name: "Charlie" },
+    { age: 31, job: "developer", name: "David" }
+];
+
+const result = getDevelopers(employees);
+console.log(result);
