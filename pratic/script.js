@@ -174,3 +174,6 @@ console.log(halfAndHalf(text1));
 // Example 2    
 const text2 = "Programming";
 console.log(halfAndHalf(text2));
+
+
+
