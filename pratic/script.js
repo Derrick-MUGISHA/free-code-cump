@@ -133,3 +133,26 @@ const employees = [
 
 const result = getDevelopers(employees);
 console.log(result);
+
+
+function isSorted(numbers) {
+    let ascending = true;
+    let descending = true;
+
+    for (let i = 0; i < numbers.length - 1; i++) {
+        if (numbers[i] > numbers[i + 1]) {
+            ascending = false; // Not in ascending order
+        }
+        if (numbers[i] < numbers[i + 1]) {
+            descending = false; // Not in descending order
+        }
+    }
+
+    return ascending || descending; // Return true if either is true
+}
+
+const numbers1 = [19, 10, 23];
+console.log(isSorted(numbers1)); 
+
+const numbers2 = [91, 31, -5];
+console.log(isSorted(numbers2)); 
