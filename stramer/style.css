@@ -1,80 +1,116 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .navbar {
-    width: 100%;
-    height: 50px;
-    background-color: #333;
+  width: 100%;
+  height: 50px;
+  background-color: #333;
 }
 
-.navbar-container{
+.navbar-container {
+  display: flex;
+  align-items: center;
+  /* background-color: antiquewhite; */
+  padding: 0 50px;
+  height: 100%;
+  color: white;
+  font-family: "Sen", sans-serif;
+}
+
+.logo-container {
+  flex: 1;
+  /* background-color: chartreuse; */
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 30px;
+  color: #4dbf00;
+}
+
+.menu-container {
+  flex: 6;
+  /* background-color: rgb(187, 130, 130); */
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.menu-list li {
+  margin: 0 20px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.menu-list-item .active {
+  font-weight: bolder;
+}
+
+.profile-container {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  /* background-color: red ; */
+  justify-content: flex-end;
+}
+
+
+.profile-text-container{
+    margin: 0 20px;
+}
+
+.profile-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.toggle{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
     display: flex;
     align-items: center;
-    /* background-color: antiquewhite; */
-    padding: 0 50px;
-    height: 100%;
-    color: white;
-    font-family: 'Sen', sans-serif;
+    justify-content: space-around;
+    position: relative;
+
 }
 
-.logo-container{
-    flex: 1;
-    /* background-color: chartreuse; */
-}
-
-.logo{
-    font-weight: 700;
-    font-size: 30px;
-    color: #4dbf00;
-}
-
-.menu-container{
-    flex: 6;
-    /* background-color: rgb(187, 130, 130); */
-}
-
-.menu-list{
+.toggle-icon{
+    color: goldenrod;
+    /* font-size: 15px;
     display: flex;
-    list-style: none;
-    justify-content: center;
+    align-items: center;
+    justify-content: center; */
 }
 
-.menu-list li{
-    margin: 0 20px;
-    font-size: 20px;
-    font-weight: 500;
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
-.menu-list-item .active{
-    color: #4dbf00;
-}
-
-.profile-container{
-    flex: 2;
-    /* background-color: red !important; */
-}
-
-.profile-picture{
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-
-
-.sidebar{
-   width: 50px;
-   height: 100%;
-   background-color: #555;
-   position: fixed; 
-   top: 0;
+.sidebar {
+  width: 50px;
+  height: 100%;
+  background-color: #555;
+  position: fixed;
+  top: 0;
 }
