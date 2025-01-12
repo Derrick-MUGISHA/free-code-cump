@@ -21,6 +21,7 @@ body {
     padding: 0 50px;
     height: 100%;
     color: white;
+    font-family: 'Sen', sans-serif;
 }
 
 .logo-container{
@@ -29,7 +30,6 @@ body {
 }
 
 .logo{
-    font-family: 'Sen', sans-serif;
     font-weight: 700;
     font-size: 30px;
     color: #4dbf00;
@@ -38,6 +38,23 @@ body {
 .menu-container{
     flex: 6;
     /* background-color: rgb(187, 130, 130); */
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.menu-list li{
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menu-list-item .active{
+    color: #4dbf00;
 }
 
 .profile-container{
