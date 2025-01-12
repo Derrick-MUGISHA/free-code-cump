@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+}
+
+.logo-container{
+    flex: 1;
+    /* background-color: chartreuse; */
+}
+
+.logo{
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #4dbf00;
+}
+
+.menu-container{
+    flex: 6;
+    /* background-color: rgb(187, 130, 130); */
+}
+
+.profile-container{
+    flex: 2;
+    /* background-color: red !important; */
+}
+
+
+.sidebar{
+   width: 50px;
+   height: 100%;
+   background-color: #555;
+   position: fixed; 
+   top: 0;
+}
