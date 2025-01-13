@@ -176,4 +176,35 @@ const text2 = "Programming";
 console.log(halfAndHalf(text2));
 
 
+// .reduce function .reduce() = reduce the elements of an array to a single value .......
 
+const grades = [85, 90, 95, 80, 70];
+
+const maximum = grades.reduce(getMax);
+
+const minimum = grades.reduce(getMin);
+
+console.log(maximum);
+console.log(minimum);
+
+
+function getMax(fast, second) {
+    return Math.max(fast, second);
+}
+
+function getMin(fast, second) {
+    return Math.min(fast, second);  
+}
+
+
+const together = [1, 2, 3, 4, 5];
+
+const all = together.reduce(combine);
+
+
+
+console.log(`${all.toFixed(2)}`);
+
+function combine(fast, second) {
+    return fast + second;
+}
