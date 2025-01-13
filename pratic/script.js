@@ -208,3 +208,11 @@ console.log(`${all.toFixed(2)}`);
 function combine(fast, second) {
     return fast + second;
 }
+
+// Example of a simple prompt interaction
+
+var prompt = require('prompt-sync')();
+const userName = prompt("What is your name?");
+const userAge = prompt("How old are you?");
+const greetingMessage = `Hello, ${userName}! You are ${userAge} years old.`;
+console.log(greetingMessage);
